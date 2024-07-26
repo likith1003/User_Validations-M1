@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>users Page</h1>
+        <table border="2px solid black">
+            <tr>
+                <th>RollNo</th>
+                <th>Student Name</th>
+                <th>Pno</th>
+                <th>Email</th>
+                <th>Class</th>
+                <th>UserName</th>
+                <th>Password</th>
+            </tr>
+            {% for user in users %}
+              <tr>
+                <td>{{user.rollno}}</td>
+                <td>{{user.sname}}</td>
+                <td>{{user.spno}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.cls}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.pw}}</td>
+              </tr>
+            {% endfor %}
+        </table>
+        
+    </center>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to home page</h1>
+        {% if user.username %}
+        <h1>The Name of the student is {{user.sname}}</h1>
+        <h1>The Pno of the Student is {{user.pno}}</h1>
+        <h1>The Email of the Student is {{user.email}}</h1>
+        <h1>The Class of the student is {{user.cls}}</h1>
+        {% endif %}
+    </center>
+
+</body>
+</html>
